@@ -1,0 +1,5 @@
+NAME                       IMAGE                        STATUS                            PORTS
+gl-balanceador             nginx:1.28-alpine            Up 6 seconds (health: starting)   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp
+globallogistics-envios-1   globallogistics/envios:1.0   Up 12 seconds (healthy)           3000/tcp
+globallogistics-envios-2   globallogistics/envios:1.0   Up 12 seconds (healthy)           3000/tcp
+globallogistics-envios-3   globallogistics/envios:1.0   Up 11 seconds (healthy)           3000/tcp

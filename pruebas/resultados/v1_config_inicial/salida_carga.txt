@@ -1,0 +1,10 @@
+Calentando las réplicas...
+>> Escenario 'moderado': 20000 peticiones con 100 usuarios concurrentes
+   req/s;media_ms;p50;p95;p99;max;fallidas;no_2xx
+   1108.94;90.176;93;171;407;1401;0;0
+
+>> Escenario 'extremo': 50000 peticiones con 1000 usuarios concurrentes
+   req/s;media_ms;p50;p95;p99;max;fallidas;no_2xx
+   3764.71;265.625;58;231;10064;10720;0;39809
+
+Listo. Resultados en /Users/ariannunez/Documents/UCH/3erANIO/ArquitecturaSistemas/TercerProyecto/GlobalLogistics/pruebas/resultados

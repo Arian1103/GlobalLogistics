@@ -1,0 +1,19 @@
+Enviando 12 peticiones consecutivas a http://localhost:8080/
+
+  Petición  1  ->  atendida por la instancia e34b3b0cc5bb
+  Petición  2  ->  atendida por la instancia 5bacb47dac05
+  Petición  3  ->  atendida por la instancia 6fb625ee5fc2
+  Petición  4  ->  atendida por la instancia e34b3b0cc5bb
+  Petición  5  ->  atendida por la instancia 5bacb47dac05
+  Petición  6  ->  atendida por la instancia 6fb625ee5fc2
+  Petición  7  ->  atendida por la instancia e34b3b0cc5bb
+  Petición  8  ->  atendida por la instancia 5bacb47dac05
+  Petición  9  ->  atendida por la instancia 6fb625ee5fc2
+  Petición 10  ->  atendida por la instancia e34b3b0cc5bb
+  Petición 11  ->  atendida por la instancia 5bacb47dac05
+  Petición 12  ->  atendida por la instancia 6fb625ee5fc2
+
+Réplicas corriendo (el ID del contenedor coincide con la instancia):
+globallogistics-envios-2   ID=6fb625ee5fc2   Up 12 seconds (healthy)
+globallogistics-envios-1   ID=e34b3b0cc5bb   Up 12 seconds (healthy)
+globallogistics-envios-3   ID=5bacb47dac05   Up 12 seconds (healthy)

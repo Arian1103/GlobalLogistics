@@ -1,0 +1,13 @@
+>>    1 usuarios (3000 peticiones)... 1;3000;629.32;1.589;1;2;4;87;0;0
+>>    5 usuarios (3000 peticiones)... 5;3000;955.63;5.232;2;45;53;97;0;0
+>>   10 usuarios (3000 peticiones)... 10;3000;1188.94;8.411;4;54;57;81;0;0
+>>   25 usuarios (3000 peticiones)... 25;3000;1160.42;21.544;10;62;72;82;0;0
+>>   50 usuarios (3000 peticiones)... 50;3000;1180.61;42.351;21;77;86;92;0;0
+>>  100 usuarios (3000 peticiones)... 100;3000;1259.16;79.418;88;94;105;158;0;0
+>>  200 usuarios (4000 peticiones)... 200;4000;1206.79;165.728;177;201;226;264;0;0
+>>  300 usuarios (6000 peticiones)... 300;6000;1176.53;254.987;231;302;361;381;0;0
+>>  400 usuarios (8000 peticiones)... 400;8000;1200.37;333.230;311;385;403;458;0;0
+>>  600 usuarios (12000 peticiones)... 600;12000;1183.93;506.786;496;596;701;760;0;0
+>>  800 usuarios (16000 peticiones)... 800;16000;1205.39;663.686;668;709;762;769;0;0
+>> 1000 usuarios (20000 peticiones)... 1000;20000;1186.90;842.533;816;913;975;1014;0;0
+Listo: /Users/ariannunez/Documents/UCH/3erANIO/ArquitecturaSistemas/TercerProyecto/GlobalLogistics/pruebas/resultados/barrido.csv

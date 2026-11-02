@@ -1,0 +1,7 @@
+>> Escalando a 1 réplica(s)
+   1;351.13;284.796;286;366;459;656;0;0
+>> Escalando a 2 réplica(s)
+   2;732.85;136.453;117;192;286;383;0;0
+>> Escalando a 3 réplica(s)
+   3;1087.89;91.921;92;124;202;297;0;0
+Listo: /Users/ariannunez/Documents/UCH/3erANIO/ArquitecturaSistemas/TercerProyecto/GlobalLogistics/pruebas/resultados/escalado.csv (quedan 3 réplicas corriendo)

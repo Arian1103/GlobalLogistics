@@ -1,0 +1,3 @@
+39809 [error] no live upstreams while connecting to upstream, 
+ 658 [error] upstream timed out (110: Operation timed out) while reading response header from upstream, 
+   1 [error] recv() failed (104: Connection reset by peer) while reading response header from upstream, 

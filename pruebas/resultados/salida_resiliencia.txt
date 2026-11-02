@@ -1,0 +1,26 @@
+>> Carga constante de fondo: 50 usuarios, 40000 peticiones
+>> [t=5s]  Se cae el proceso de la réplica 1
+{"instancia":"315cf1fba730","mensaje":"me caigo en 100 ms"}
+>> [t=9s]  La réplica 2 pasa a estar enferma (responde 503)
+{"instancia":"a6a3d62fcde2","estado":"DOWN"}
+>> [t=27s] Estado de las réplicas (Docker ya marcó a la 2 como unhealthy):
+globallogistics-envios-2  Up 41 seconds (unhealthy)
+globallogistics-envios-1  Up 22 seconds (healthy)
+globallogistics-envios-3  Up 41 seconds (healthy)
+>> [t=27s] La réplica 2 se recupera
+{"instancia":"a6a3d62fcde2","estado":"UP"}
+
+>> Resultado de la carga mientras pasaba todo esto:
+   Complete requests:      40000
+   Failed requests:        0
+   Requests per second:    849.67 [#/sec] (mean)
+     95%     97
+     99%    172
+
+>> Estado final de las réplicas (la 1 fue reiniciada por Docker sola):
+globallogistics-envios-2  Up About a minute (healthy)
+globallogistics-envios-1  Up 42 seconds (healthy)
+globallogistics-envios-3  Up About a minute (healthy)
+   /globallogistics-envios-2 reinicios=0
+   /globallogistics-envios-1 reinicios=1
+   /globallogistics-envios-3 reinicios=0

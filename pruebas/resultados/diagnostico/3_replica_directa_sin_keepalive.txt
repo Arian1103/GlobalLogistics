@@ -1,0 +1,53 @@
+This is ApacheBench, Version 2.3 <$Revision: 1934973 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.21.0.4 (be patient)
+Completed 600 requests
+Completed 1200 requests
+Completed 1800 requests
+Completed 2400 requests
+Completed 3000 requests
+Completed 3600 requests
+Completed 4200 requests
+Completed 4800 requests
+Completed 5400 requests
+Completed 6000 requests
+Finished 6000 requests
+
+
+Server Software:        
+Server Hostname:        172.21.0.4
+Server Port:            3000
+
+Document Path:          /cotizar?peso=2&destino=CL
+Document Length:        Variable
+
+Concurrency Level:      333
+Time taken for tests:   16.782 seconds
+Complete requests:      6000
+Failed requests:        0
+Total transferred:      2068973 bytes
+HTML transferred:       658973 bytes
+Requests per second:    357.53 [#/sec] (mean)
+Time per request:       931.385 [ms] (mean)
+Time per request:       2.797 [ms] (mean, across all concurrent requests)
+Transfer rate:          120.40 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   2.9      0      20
+Processing:     4  905 111.3    914    1062
+Waiting:        3  885 168.1    914    1062
+Total:         24  906 109.8    914    1062
+
+Percentage of the requests served within a certain time (ms)
+  50%    914
+  66%    934
+  75%    969
+  80%    976
+  90%    996
+  95%   1003
+  98%   1010
+  99%   1011
+ 100%   1062 (longest request)

@@ -1,0 +1,54 @@
+This is ApacheBench, Version 2.3 <$Revision: 1934973 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking balanceador (be patient)
+Completed 2000 requests
+Completed 4000 requests
+Completed 6000 requests
+Completed 8000 requests
+Completed 10000 requests
+Completed 12000 requests
+Completed 14000 requests
+Completed 16000 requests
+Completed 18000 requests
+Completed 20000 requests
+Finished 20000 requests
+
+
+Server Software:        nginx/1.28.3
+Server Hostname:        balanceador
+Server Port:            80
+
+Document Path:          /cotizar?peso=2&destino=CL
+Document Length:        Variable
+
+Concurrency Level:      1000
+Time taken for tests:   17.599 seconds
+Complete requests:      20000
+Failed requests:        0
+Non-2xx responses:      804
+Total transferred:      7880837 bytes
+HTML transferred:       2241169 bytes
+Requests per second:    1136.42 [#/sec] (mean)
+Time per request:       879.954 [ms] (mean)
+Time per request:       0.880 [ms] (mean, across all concurrent requests)
+Transfer rate:          437.30 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   8.2      0      79
+Processing:     1  840 2268.2    120   10041
+Waiting:        1  840 2268.2    120   10041
+Total:          2  842 2270.4    120   10071
+
+Percentage of the requests served within a certain time (ms)
+  50%    120
+  66%    191
+  75%    217
+  80%    293
+  90%   1898
+  95%   6664
+  98%  10001
+  99%  10044
+ 100%  10071 (longest request)

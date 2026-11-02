@@ -1,0 +1,25 @@
+hora;contenedor;cpu;memoria
+16:47:48;gl-balanceador;13.71%;21.96MiB / 3.825GiB
+16:47:48;globallogistics-envios-2;50.41%;23.79MiB / 256MiB
+16:47:48;globallogistics-envios-1;48.34%;23.82MiB / 256MiB
+16:47:48;globallogistics-envios-3;50.12%;23.77MiB / 256MiB
+16:47:50;gl-balanceador;13.35%;22.56MiB / 3.825GiB
+16:47:50;globallogistics-envios-2;48.19%;25.31MiB / 256MiB
+16:47:50;globallogistics-envios-1;49.76%;25.07MiB / 256MiB
+16:47:50;globallogistics-envios-3;48.86%;26.6MiB / 256MiB
+16:47:53;gl-balanceador;14.46%;23.42MiB / 3.825GiB
+16:47:53;globallogistics-envios-2;50.06%;26.14MiB / 256MiB
+16:47:53;globallogistics-envios-1;49.23%;26.02MiB / 256MiB
+16:47:53;globallogistics-envios-3;50.50%;26.63MiB / 256MiB
+16:47:55;gl-balanceador;15.30%;23.71MiB / 3.825GiB
+16:47:55;globallogistics-envios-2;50.55%;29.55MiB / 256MiB
+16:47:55;globallogistics-envios-1;48.52%;26.7MiB / 256MiB
+16:47:55;globallogistics-envios-3;49.31%;29.21MiB / 256MiB
+16:47:57;gl-balanceador;13.94%;24.12MiB / 3.825GiB
+16:47:57;globallogistics-envios-2;48.07%;26.75MiB / 256MiB
+16:47:57;globallogistics-envios-1;49.22%;26.68MiB / 256MiB
+16:47:57;globallogistics-envios-3;48.05%;26.96MiB / 256MiB
+16:47:59;gl-balanceador;14.60%;24.4MiB / 3.825GiB
+16:47:59;globallogistics-envios-2;50.24%;27.22MiB / 256MiB
+16:47:59;globallogistics-envios-1;47.81%;26.85MiB / 256MiB
+16:47:59;globallogistics-envios-3;48.90%;26.64MiB / 256MiB
