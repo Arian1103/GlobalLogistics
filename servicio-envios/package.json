@@ -1,0 +1,13 @@
+{
+  "name": "servicio-envios",
+  "version": "1.0.0",
+  "description": "Microservicio de Envíos de GlobalLogistics S.A. (TP3 Arquitectura de Sistemas)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
