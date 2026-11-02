@@ -1,0 +1,61 @@
+# Infraestructura como código del TP3 - GlobalLogistics S.A.
+# Levanta exactamente 1 balanceador (NGINX) y 3 réplicas del microservicio de Envíos.
+#
+#   docker compose up -d --build
+#
+name: globallogistics
+
+services:
+
+  # ---------- Balanceador de carga (único punto de entrada) ----------
+  balanceador:
+    image: nginx:1.28-alpine
+    container_name: gl-balanceador
+    ports:
+      - "8080:80"            # el cliente solo conoce este puerto
+    volumes:
+      - ./balanceador/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      envios:
+        condition: service_healthy   # no arranca hasta que las réplicas estén sanas
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1/nginx-health > /dev/null || exit 1"]
+      interval: 10s
+      timeout: 2s
+      retries: 3
+    sysctls:
+      net.core.somaxconn: 4096
+    restart: unless-stopped
+    networks:
+      - red-gl
+
+  # ---------- Microservicio de Envíos (3 réplicas) ----------
+  envios:
+    build: ./servicio-envios
+    image: globallogistics/envios:1.0
+    environment:
+      PUERTO: "3000"
+      ITERACIONES_COTIZACION: "5000"
+    expose:
+      - "3000"               # no se publica al host, solo se llega por el balanceador
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          cpus: "0.50"       # medio núcleo por réplica, para poder llegar a saturar la CPU
+          memory: 256M
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:3000/health > /dev/null || exit 1"]
+      interval: 5s
+      timeout: 2s
+      retries: 3
+      start_period: 5s
+    sysctls:
+      net.core.somaxconn: 4096   # cola de conexiones pendientes más grande
+    restart: unless-stopped  # si el proceso se cae, Docker lo vuelve a levantar solo
+    networks:
+      - red-gl
+
+networks:
+  red-gl:
+    name: gl-red
